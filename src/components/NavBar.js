@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Header(props) {
     return(
-        <header className="row block center">
+        <nav className="row block center">
             <div>
                 <a href="#/">
                     <h1>Mi primer app con react (carrito de compras)</h1>
@@ -11,6 +11,6 @@ export default function Header(props) {
             <div>
                 <a href="#/">Carrito</a> <a href="#/">Iniciar Sesión</a>
             </div>
-        </header>
+        </nav>
     );
 }
