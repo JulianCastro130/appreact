@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Basket(props) {
+export default function ItemCount(props) {
   const { cartItems, onAdd, onRemove } = props;
   return (
     <aside className="block col-1">
