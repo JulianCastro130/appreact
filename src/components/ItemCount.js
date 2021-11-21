@@ -1,30 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-export default function ItemCount(props) {
-  const { cartItems, onAdd, onRemove } = props;
-  return (
-    <aside className="block col-1">
-      <h2>Productos en el carrito</h2>
-      <div>
-        {cartItems.length === 0 && <div>Carrito vacío</div>}
-        {cartItems.map((item) => (
-          <div key={item.id} className="row">
-            <div className="col-2">{item.name}</div>
-            <div className="col-2">
-              <button onClick={() => onRemove(item)} className="remove">
-                -
-              </button>{' '}
-              <button onClick={() => onAdd(item)} className="add">
-                +
-              </button>
-            </div>
+const ItemCount = ({ stock }) => {
+    const [number, setNumber] = useState(0);
 
-            <div className="col-2 text-right">
-              {item.qty} x ${item.price.toFixed(2)}
-            </div>
-          </div>
-        ))}
-      </div>
-    </aside>
-  );
-}
+    const add = () => {
+        number !== stock && setNumber(number + 1);
+    };
+
+    const substract = () => {
+        number !== 0 && setNumber(number - 1);
+    };
+
+    return (
+      <aside className="block">
+        <div>
+          <h2>Contador</h2>
+          <p>{number}</p>
+          <button onClick={add}>+</button>
+          <button onClick={substract}>-</button>
+        </div>
+      </aside>
+
+    );
+};
+
+export default ItemCount;

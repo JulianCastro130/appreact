@@ -23,8 +23,10 @@ const ItemListContainer = ({ saludo }) => {
 
     return (
         <>
+            <div className="block col-1">
             <h1>{saludo}</h1>
-            <ItemList items={items} />
+            <ItemList className="itemList" items={items} />
+            </div>
         </>
     );
 };

@@ -26,6 +26,8 @@ a {
   align-items: center;
 }
 .col-1 {
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 .col-2 {
@@ -39,7 +41,4 @@ a {
 }
 .text-right {
   text-align: right;
-}
-.Item{
-  background-color: black;
 }

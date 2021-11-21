@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function NavBar(props) {
+export default function NavBary(props) {
   return (
     <header className="block row center">
       <div>
@@ -10,13 +10,7 @@ export default function NavBar(props) {
       </div>
       <div>
         <a href="#/cart">
-        <i class="fas fa-shopping-cart"></i>{' '}
-          {props.countCartItems ? (
-            <button className="badge">{props.countCartItems}</button>
-          ) : (
-            ''
-          )}
-        </a>{' '}
+        <i class="fas fa-shopping-cart"></i></a>
       </div>
     </header>
   );
