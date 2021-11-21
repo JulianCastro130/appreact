@@ -14,7 +14,6 @@ const ItemCount = ({ stock }) => {
     return (
       <aside className="block">
         <div>
-          <h2>Contador</h2>
           <p>{number}</p>
           <button onClick={add}>+</button>
           <button onClick={substract}>-</button>
