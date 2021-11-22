@@ -1,17 +1,23 @@
 import './App.css';
-import ItemListContainer from './components/ItemListContainer';
-import ItemCount from './components/ItemCount';
-import NavBar from './components/NavBar';
+import Efecto from './components/Efecto';
+import ItemListContainer from './components/Item/ItemListContainer';
+import ItemDetailContainer from './components/Item/ItemDetailContainer';
+import Navbar from './components/Navbar/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//import Catalogo from './Views/Catalogo';
 
 function App() {
     return (
-        <>
-            <NavBar></NavBar>
-            <div className="row">
-            <ItemListContainer class="Item block col-1" saludo="Bienvenidos a mi E-comerce 🙌🏼 " />
-            <ItemCount></ItemCount>
-            </div>
-        </>
+        <Router>
+            <Navbar />
+
+            <Routes>
+                <Route path="/" element={<ItemListContainer />} />
+                <Route path="/category/:id" element={<ItemListContainer />} />
+                <Route path="/item/:id" element={<ItemDetailContainer />} />
+                <Route path="/contador" element={<Efecto />} />
+            </Routes>
+        </Router>
     );
 }
 

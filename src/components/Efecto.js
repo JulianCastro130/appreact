@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ItemCount = ({ stock }) => {
+const Efecto = ({ stock }) => {
     const [number, setNumber] = useState(0);
 
     const add = () => {
@@ -12,15 +12,12 @@ const ItemCount = ({ stock }) => {
     };
 
     return (
-      <aside className="block">
         <div>
-          <p>{number}</p>
-          <button onClick={add}>+</button>
-          <button onClick={substract}>-</button>
+            <p>{number}</p>
+            <button onClick={add}>+</button>
+            <button onClick={substract}>-</button>
         </div>
-      </aside>
-
     );
 };
 
-export default ItemCount;
+export default Efecto;
