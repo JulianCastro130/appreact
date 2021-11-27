@@ -1,7 +1,7 @@
 export const products = [
     {
         name: 'Shoe',
-        price: 200,
+        price: 8000,
         stock: 10,
         id: '1',
         img: 'https://www.trekkinn.com/f/13635/136356822/la-sportiva-pies-de-gato-tarantula.jpg',
@@ -9,7 +9,7 @@ export const products = [
     },
     {
         name: 'Shoe2',
-        price: 222,
+        price: 8500,
         stock: 10,
         id: '11',
         img: 'https://www.trekkinn.com/f/13635/136356822/la-sportiva-pies-de-gato-tarantula.jpg',
@@ -17,7 +17,7 @@ export const products = [
     },
     {
         name: 'Rope',
-        price: 300,
+        price: 25000,
         stock: 4,
         id: '2',
         img: 'https://www.trekkinn.com/f/13597/135970307/petzl-cuerda-club-10-mm.jpg',
@@ -25,7 +25,7 @@ export const products = [
     },
     {
         name: 'Rope2',
-        price: 333,
+        price: 30000,
         stock: 4,
         id: '22',
         img: 'https://www.trekkinn.com/f/13597/135970307/petzl-cuerda-club-10-mm.jpg',
@@ -33,7 +33,7 @@ export const products = [
     },
     {
         name: 'Express',
-        price: 70,
+        price: 3000,
         stock: 6,
         id: '3',
         img: 'https://www.trekkinn.com/f/13739/137394195/qiroc-conjunto-elektra-recto-clip-curvo-clip-expres-dyneema-12x120mm.jpg',
@@ -41,7 +41,7 @@ export const products = [
     },
     {
         name: 'Express2',
-        price: 77,
+        price: 3500,
         stock: 6,
         id: '33',
         img: 'https://www.trekkinn.com/f/13739/137394195/qiroc-conjunto-elektra-recto-clip-curvo-clip-expres-dyneema-12x120mm.jpg',
@@ -49,7 +49,7 @@ export const products = [
     },
     {
         name: 'Harness',
-        price: 80,
+        price: 30000,
         stock: 20,
         id: '4',
         img: 'https://www.trekkinn.com/f/13794/137944914/petzl-arnes-adjama.jpg',
@@ -57,7 +57,7 @@ export const products = [
     },
     {
         name: 'Harness2',
-        price: 88,
+        price: 26000,
         stock: 20,
         id: '44',
         img: 'https://www.trekkinn.com/f/13794/137944914/petzl-arnes-adjama.jpg',

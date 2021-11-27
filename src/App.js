@@ -3,13 +3,13 @@ import Efecto from './components/Efecto';
 import ItemListContainer from './components/Item/ItemListContainer';
 import ItemDetailContainer from './components/Item/ItemDetailContainer';
 import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 //import Catalogo from './Views/Catalogo';
 
 function App() {
     return (
-        <Router>
-            <Navbar />
+        <BrowserRouter>
+                    <Navbar />
 
             <Routes>
                 <Route path="/" element={<ItemListContainer />} />
@@ -17,7 +17,7 @@ function App() {
                 <Route path="/item/:id" element={<ItemDetailContainer />} />
                 <Route path="/contador" element={<Efecto />} />
             </Routes>
-        </Router>
+        </BrowserRouter>
     );
 }
 
