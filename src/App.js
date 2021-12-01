@@ -1,24 +1,21 @@
-import './App.css';
-import Efecto from './components/Efecto';
-import ItemListContainer from './components/Item/ItemListContainer';
-import ItemDetailContainer from './components/Item/ItemDetailContainer';
-import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
-//import Catalogo from './Views/Catalogo';
+import React from 'react';
+import './index.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { NavBar } from './components/NavBar';
+import { ItemListContainer } from './components/ItemListContainer';
+import { ItemDetailContainer } from './components/ItemDetailContainer';
 
-function App() {
-    return (
-        <BrowserRouter>
-                    <Navbar />
+export default function App() {
+  return (
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<ItemListContainer />} />
 
-            <Routes>
-                <Route path="/" element={<ItemListContainer />} />
-                <Route path="/category/:id" element={<ItemListContainer />} />
-                <Route path="/item/:id" element={<ItemDetailContainer />} />
-                <Route path="/contador" element={<Efecto />} />
-            </Routes>
-        </BrowserRouter>
-    );
+        <Route path="/category/:catId" element={<ItemListContainer />} />
+
+        <Route path="/product/:itemId" element={<ItemDetailContainer />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App;

@@ -1,10 +1,10 @@
-export const products = [
+export const data = [
     {
         name: 'Shoe',
         price: 8000,
         stock: 10,
         id: '1',
-        img: 'https://www.trekkinn.com/f/13635/136356822/la-sportiva-pies-de-gato-tarantula.jpg',
+        image: 'https://www.trekkinn.com/f/13635/136356822/la-sportiva-pies-de-gato-tarantula.jpg',
         category: 'shoes',
     },
     {
@@ -12,7 +12,7 @@ export const products = [
         price: 8500,
         stock: 10,
         id: '11',
-        img: 'https://www.trekkinn.com/f/13635/136356822/la-sportiva-pies-de-gato-tarantula.jpg',
+        image: 'https://www.trekkinn.com/f/13635/136356822/la-sportiva-pies-de-gato-tarantula.jpg',
         category: 'shoes',
     },
     {
@@ -20,7 +20,7 @@ export const products = [
         price: 25000,
         stock: 4,
         id: '2',
-        img: 'https://www.trekkinn.com/f/13597/135970307/petzl-cuerda-club-10-mm.jpg',
+        image: 'https://www.trekkinn.com/f/13597/135970307/petzl-cuerda-club-10-mm.jpg',
         category: 'ropes',
     },
     {
@@ -28,7 +28,7 @@ export const products = [
         price: 30000,
         stock: 4,
         id: '22',
-        img: 'https://www.trekkinn.com/f/13597/135970307/petzl-cuerda-club-10-mm.jpg',
+        image: 'https://www.trekkinn.com/f/13597/135970307/petzl-cuerda-club-10-mm.jpg',
         category: 'ropes',
     },
     {
@@ -36,7 +36,7 @@ export const products = [
         price: 3000,
         stock: 6,
         id: '3',
-        img: 'https://www.trekkinn.com/f/13739/137394195/qiroc-conjunto-elektra-recto-clip-curvo-clip-expres-dyneema-12x120mm.jpg',
+        image: 'https://www.trekkinn.com/f/13739/137394195/qiroc-conjunto-elektra-recto-clip-curvo-clip-expres-dyneema-12x120mm.jpg',
         category: 'expres',
     },
     {
@@ -44,7 +44,7 @@ export const products = [
         price: 3500,
         stock: 6,
         id: '33',
-        img: 'https://www.trekkinn.com/f/13739/137394195/qiroc-conjunto-elektra-recto-clip-curvo-clip-expres-dyneema-12x120mm.jpg',
+        image: 'https://www.trekkinn.com/f/13739/137394195/qiroc-conjunto-elektra-recto-clip-curvo-clip-expres-dyneema-12x120mm.jpg',
         category: 'expres',
     },
     {
@@ -52,7 +52,7 @@ export const products = [
         price: 30000,
         stock: 20,
         id: '4',
-        img: 'https://www.trekkinn.com/f/13794/137944914/petzl-arnes-adjama.jpg',
+        image: 'https://www.trekkinn.com/f/13794/137944914/petzl-arnes-adjama.jpg',
         category: 'harness',
     },
     {
@@ -60,7 +60,7 @@ export const products = [
         price: 26000,
         stock: 20,
         id: '44',
-        img: 'https://www.trekkinn.com/f/13794/137944914/petzl-arnes-adjama.jpg',
+        image: 'https://www.trekkinn.com/f/13794/137944914/petzl-arnes-adjama.jpg',
         category: 'harness',
     },
 ];
